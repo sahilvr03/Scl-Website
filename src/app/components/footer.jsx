@@ -1,5 +1,6 @@
 import { FaTwitter, FaLinkedin, FaGithub, FaYoutube, FaMapMarkerAlt, FaPhone, FaEnvelope, FaRegClock } from 'react-icons/fa';
-
+import Image from 'next/image';
+import Link from 'next/link';
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white pt-16 pb-8">
@@ -8,8 +9,20 @@ const Footer = () => {
           {/* About Section */}
           <div>
             <h3 className="text-2xl font-bold mb-6 text-blue-400 flex items-center">
-              <span className="bg-blue-600 text-white p-2 rounded-lg mr-3">NCAI</span>
-              Research Centre
+              <Link href="/" className="flex items-center space-x-2">
+                         <Image 
+                           src="/images/ncailogo.png" // Replace with your actual logo path
+                           alt="Logo"
+                           width={250}      // Adjust as needed
+                           height={10}     // Match height visually with text
+                           className="object-contain"
+                         />
+                           {/* <span className="text-3xl font-black text-blue-400 tracking-tight">NCAI</span>
+                           <span className="text-xs text-gray-600 font-light leading-tight hidden sm:block">
+                             <p>Research Center for</p>
+                             <p>Artificial Intelligence</p>
+                           </span> */}
+                     </Link>
             </h3>
             <p className="text-gray-300 mb-4">
               Advancing artificial intelligence through cutting-edge research and innovative solutions for real-world challenges.

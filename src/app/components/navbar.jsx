@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { FiMenu, FiX, FiSearch } from 'react-icons/fi';
 import { FaFacebookF, FaInstagram, FaYoutube, FaLinkedinIn } from 'react-icons/fa';
+import Image from 'next/image';
 
 const navLinks = [
   { name: 'Home', href: '/' },
@@ -33,7 +34,7 @@ export default function Navbar() {
             <Link href="/press">Press</Link>
             <Link href="/contact">Contact</Link>
             <Link href="/careers">Careers</Link>
-            <Link href="#" className="font-semibold">Deutsch</Link>
+           
           </div>
           <div className="flex items-center gap-4">
             <FaFacebookF className="hover:text-indigo-600 transition" />
@@ -57,12 +58,19 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <span className="text-3xl font-black text-blue-400 tracking-tight">NCAI</span>
-            <span className="text-xs text-gray-600 font-light leading-tight hidden sm:block">
-              <p>Research Center for</p>
-              <p>Artificial Intelligence</p>
-            </span>
-          </Link>
+            <Image 
+              src="/images/ncailogo.png" // Replace with your actual logo path
+              alt="Logo"
+              width={250}      // Adjust as needed
+              height={10}     // Match height visually with text
+              className="object-contain"
+            />
+              {/* <span className="text-3xl font-black text-blue-400 tracking-tight">NCAI</span>
+              <span className="text-xs text-gray-600 font-light leading-tight hidden sm:block">
+                <p>Research Center for</p>
+                <p>Artificial Intelligence</p>
+              </span> */}
+        </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-6 text-[15px] font-medium text-gray-800">

@@ -12,11 +12,11 @@ const navLinks = [
   { name: 'About us', href: '../../Admin/AboutPage' },
   { name: 'Projects', href: '../../Admin/projectPage' },
   
-  { name: 'Services', href: '/services' },
-  { name: 'Publications', href: '/publications' },
+  { name: 'Services', href: '../../Admin/ServicesPage' },
+  { name: 'Publications', href: '../../Admin/PublicationPage' },
   { name: 'Team', href: '/team' },
-  { name: 'News & Events', href: '/news' },
-  { name: 'Gallery', href: '/gallery' },
+  { name: 'News & Events', href: '../../Admin/NewsPage' },
+  { name: 'Gallery', href: '../../Admin/GalleryPage' },
   { name: 'Contact Us', href: '/contact' }
 ];
 

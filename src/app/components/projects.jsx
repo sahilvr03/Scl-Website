@@ -6,12 +6,12 @@ import Image from 'next/image';
 export default function ProjectsPage() {
   const projects = [
     {
-      title: "Prompted Redaktion",
-      description: "Wie gehen deutsche Medienunternehmen mit KI um und was kann die Zukunft bringen?",
-      date: "April 10, 2025",
-      image: "/images/meeting.jpg",
-      category: "Media & AI",
-      color: "bg-green-"
+      title: "An Experimental Comparison of IoT-Based and Traditional Irrigation Scheduling on a Flood-Irrigated Subtropical Lemon Farm",
+      description: "This study explores the efficiency of IoT-based irrigation compared to traditional methods on a subtropical lemon farm, highlighting advancements in precision agriculture.",
+      date: "June 18, 2021", // Specific date derived from the publication’s release
+      image: "/images/publications/lemon_farm.jpg", // Updated with a relevant image
+      category: "Agriculture",
+      color: "bg-lime-" // Changed to a lime green shade to reflect agriculture
     },
     {
       title: "Sustainable Data Centers",

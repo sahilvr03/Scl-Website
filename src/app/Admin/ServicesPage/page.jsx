@@ -1,7 +1,7 @@
 "use client";
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { FaMicrochip, FaEye, FaRobot, FaMobileAlt, FaCube, FaGlobe, FaLeaf, FaHeartbeat, FaTractor, FaHospital, FaCar, FaGraduationCap, FaIndustry, FaCity, FaTree, FaShoppingCart } from 'react-icons/fa';
+import { FaMicrochip, FaEye, FaRobot, FaMobileAlt, FaCube, FaGlobe, FaLeaf, FaHeartbeat, FaTractor, FaHospital, FaCar, FaGraduationCap, FaIndustry, FaCity, FaTree, FaShoppingCart,FaEnvelope,FaPhone,FaMapMarkerAlt,FaFacebookF ,FaLinkedinIn  } from 'react-icons/fa';
 
 const ServicesPage = () => {
   const services = [
@@ -236,7 +236,7 @@ const ServicesPage = () => {
                   whileTap={{ scale: 0.98 }}
                   className={`mt-6 w-full py-3 bg-gradient-to-br ${service.color} text-white rounded-lg font-medium`}
                 >
-                  Learn More
+                  View Solutions
                 </motion.button>
               </div>
             </motion.div>
@@ -276,6 +276,47 @@ const ServicesPage = () => {
                 <p className="text-gray-500 text-center">{industry.count}</p>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+      {/* Get in Touch Section */}
+      <section className="bg-gray-100 py-16">
+        <div className="max-w-6xl mx-auto px-4 text-center">
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">Get in Touch</h2>
+          <p className="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">
+            Have a project in mind or looking to collaborate? We're here to help. Reach out to explore cutting-edge solutions in intelligent systems, smart automation, and real-world tech applications — our team is ready to support your next breakthrough.
+          </p>
+          <div className="grid md:grid-cols-2 gap-8 text-left max-w-lg mx-auto">
+            <div className="flex items-center space-x-4">
+              <FaEnvelope className="text-2xl text-gray-700" />
+              <div>
+                <h4 className="text-lg font-semibold text-gray-900">Email Us</h4>
+                <p className="text-gray-600">ncaismartcitylab@gmail.com</p>
+              </div>
+            </div>
+            <div className="flex items-center space-x-4">
+              <FaPhone className="text-2xl text-gray-700" />
+              <div>
+                <h4 className="text-lg font-semibold text-gray-900">Call Us</h4>
+                <p className="text-gray-600">Phone: +92 335 3046110</p>
+              </div>
+            </div>
+            <div className="flex items-center space-x-4">
+              <FaMapMarkerAlt className="text-2xl text-gray-700" />
+              <div>
+                <h4 className="text-lg font-semibold text-gray-900">Visit Us</h4>
+                <p className="text-gray-600">1st Floor, Department of Computer and Information Systems Engineering.</p>
+              </div>
+            </div>
+            <div className="flex items-center space-x-4">
+              <FaFacebookF className="text-2xl text-gray-700" />
+              <FaLinkedinIn className="text-2xl text-gray-700 ml-2" />
+              <div>
+                <h4 className="text-lg font-semibold text-gray-900">Follow Us</h4>
+                <p className="text-gray-600">Stay updated with our latest innovations:</p>
+                <p className="text-gray-600">[Facebook] [LinkedIn]</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

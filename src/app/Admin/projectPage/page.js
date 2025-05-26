@@ -37,12 +37,12 @@ const ProjectsPage = () => {
         },
         {
           id: 'iot-3',
-          name: 'Smart RFID Parking',
+          name: 'ARMEZ 2.0',
           completed: true,
-          details: 'RFID-based parking system for seamless vehicle management.',
-          image: '/images/rfid-parking.jpg',
+          details: 'Smart Laser Combat Gaming Systemt.',
+          image: '/images/armez.jpg',
           year: 2022,
-          href: '#',
+          href: '/Admin/projectPage/ARMZ',
         },
         {
           id: 'iot-4',
@@ -173,6 +173,7 @@ const ProjectsPage = () => {
       { id: 'iot-1', name: 'Crop Monitoring System' },
       { id: 'trans-1', name: 'VisionDrive AI – The Future of Autonomous Mobility' },
       { id: 'iot-2', name: 'Reverse Vending Machine' },
+      // { id: 'iot-3', name: 'ARMEZ 2.0' },
     ];
 
     return projectOrder.map(({ id }) =>

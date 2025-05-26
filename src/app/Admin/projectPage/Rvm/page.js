@@ -221,24 +221,27 @@ const ReverseVendingMachine = () => {
       </section>
 
       {/* ReBin Machine Models Section */}
-      <section className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    <section className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold mb-4 text-center text-gray-900">ReBin Machine Models</h2>
-        <p className="text-lg text-gray-600 text-center mb-8">Customizable solutions for different environments</p>
+        <p className="text-lg text-gray-600 text-center mb-8">Customizable solutions for different environments and needs</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
             {
               title: 'ReBin 2.0',
-              desc: '600+ bottle capacity, compact for indoor use, basic LCD display, SMS-based rewards.',
+              capacity: '600+',
+              features: ['Compact indoor use', 'Basic LCD display', 'SMS-based reward system'],
               image: '/images/rebin-2.0.jpg',
             },
             {
               title: 'ReBin 3.0',
-              desc: '1000+ bottle capacity, outdoor-ready design, enhanced LCD marketing screen.',
+              capacity: '1000+',
+              features: ['Deployed with large storage', 'Enhanced LCD marketing screen', 'Outdoor-ready design'],
               image: '/images/rebin-3.0.jpg',
             },
             {
               title: 'ReBin 4.0',
-              desc: '1300+ bottle capacity, AI-based sorting, advanced analytics dashboard.',
+              capacity: '1300+',
+              features: ['AI-based sorting system', 'Advanced analytics dashboard', 'Larger storage capacity'],
               image: '/images/rebin-4.0.jpg',
             },
           ].map((model, index) => (
@@ -249,17 +252,16 @@ const ReverseVendingMachine = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-white p-6 rounded-lg border border-gray-200 text-center"
             >
-              <div className="relative h-40 mb-4">
-                <Image
-                  src={model.image}
-                  alt={model.title}
-                  fill
-                  className="object-cover rounded-md"
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                />
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">{model.title}</h3>
-              <p className="text-gray-600 text-sm">{model.desc}</p>
+              <h3 className="text-2xl font-bold text-cyan-600 mb-2">{model.title}</h3>
+              <p className="text-xl text-gray-900 mb-4">{model.capacity} Bottle Capacity</p>
+              <ul className="text-gray-600 text-sm space-y-2">
+                {model.features.map((feature, i) => (
+                  <li key={i} className="flex items-center justify-center">
+                    <span className="w-2 h-2 bg-yellow-400 rounded-full mr-2"></span>
+                    {feature}
+                  </li>
+                ))}
+              </ul>
             </motion.div>
           ))}
         </div>
@@ -313,32 +315,7 @@ const ReverseVendingMachine = () => {
         </div>
       </section>
 
-      {/* Revenue & ROI Section */}
-      <section className="bg-gray-100 py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold mb-4 text-center text-gray-900">Revenue & ROI</h2>
-          <p className="text-lg text-gray-600 text-center mb-8">Sustainable revenue cycle and return on investment</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {[
-              'Ad Monetization: Revenue from brand advertising on LCD screens.',
-              'Data Analytics: Customer insights sold to sustainability companies.',
-              'Recycled Material Sales: PET bottles sold to recycling facilities.',
-              'CSR Visibility: Public goodwill for organizations hosting RVMs.',
-            ].map((revenue, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white p-6 rounded-lg border border-gray-200"
-              >
-                <p className="text-gray-600 text-sm">{revenue}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
+    
       {/* Contact Section */}
       <section className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center">
         <motion.div

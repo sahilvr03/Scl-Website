@@ -143,7 +143,7 @@ environment—without the need for physical components.
       {/* Features */}
       <section className="bg-gray-100 py-20 px-6">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-12">Key Features</h2>
+          <h2 className="text-4xl font-bold mb-12">Key Highlights</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
             {features.map((f, i) => (
               <motion.div

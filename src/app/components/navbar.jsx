@@ -33,7 +33,14 @@ export default function Navbar() {
           <div className="flex gap-4">
             <Link href="/press">Press</Link>
             <Link href="/contact">Contact</Link>
-            <Link href="/careers">Careers</Link>
+            <a
+  href="https://scl-internship-portal.vercel.app/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="hover:text-indigo-600 transition"
+>
+  Internships
+</a>
            
           </div>
           <div className="flex items-center gap-4">

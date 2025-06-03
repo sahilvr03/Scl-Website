@@ -54,6 +54,16 @@ const ProjectsPage = () => {
           featured: true,
           href: '/Admin/projectPage/AR',
         },
+         {
+          id: 'iot-5',
+          name: 'Medical Gas Alert System',
+          completed: true,
+          details: ' Built for Safety. Designed for Hospitals.',
+          image: "/images/med.png",
+          year: 2023,
+          featured: true,
+          href: '/Admin/projectPage/Medicalgasalert',
+        },
       ],
     },
     {

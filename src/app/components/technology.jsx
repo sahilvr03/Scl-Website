@@ -9,28 +9,28 @@ const technologies = [
     title: "Artificial Intelligence",
     description: "We're crafting smart systems for agriculture automation, predictive healthcare, and more.",
     icon: <FaRobot className="text-3xl" />,
-    image: "/images/hero1.jpg",
+    image: "/images/AI.jpg",
     color: "bg-blue-500"
   },
   {
     title: "Internet of Things (IoT)",
     description: "Connecting the physical and digital with smart devices for seamless insights.",
     icon: <FaNetworkWired className="text-3xl" />,
-    image: "/images/meeting.jpg",
+    image: "/images/Wasl.png",
     color: "bg-violet-500"
   },
   {
     title: "Robotics & Automation",
     description: "Building intelligent machines for agriculture, industry, and research—customized for efficiency and precision.",
     icon: <FaMobileAlt className="text-3xl" />,
-    image: "/images/research.jpg",
+    image: "/images/jazari.png",
     color: "bg-amber-500"
   },
   {
     title: "Natural Language Processing (NLP)",
     description: "Teach machines to understand and generate human language—enabling smarter communication and automation",
     icon: <FaNetworkWired className="text-3xl" />,
-    image: "/images/weedbot.jpg",
+    image: "/images/nlp.png",
     color: "bg-green-500"
   },
 ];

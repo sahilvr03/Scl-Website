@@ -25,7 +25,7 @@ export default function ProjectsPage() {
       title: "AI-Supported Personalized Medicine",
       description: "The AI4Not1 research project combines clinical research with individual patient care.",
       date: "March 17, 2025",
-      image: "/images/weedbot.jpg",
+      image: "/images/med.png",
       category: "Healthcare",
       color: "bg-white"
     },
@@ -33,7 +33,7 @@ export default function ProjectsPage() {
       title: "Agricultural Robotics",
       description: "Autonomous farming solutions that increase yield while reducing environmental impact.",
       date: "February 28, 2025",
-      image: "/images/research.jpg",
+      image: "/images/weedbot.jpg",
       category: "AgriTech",
       color: "bg-white"
     }

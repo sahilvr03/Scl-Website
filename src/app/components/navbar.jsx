@@ -14,7 +14,7 @@ const navLinks = [
   
   { name: 'Services', href: '../../Admin/ServicesPage' },
   { name: 'Publications', href: '../../Admin/PublicationPage' },
-  { name: 'Team', href: '/team' },
+  // { name: 'Team', href: '/team' },
   { name: 'News & Events', href: '../../Admin/NewsPage' },
   { name: 'Gallery', href: '../../Admin/GalleryPage' },
   { name: 'Contact Us', href: '/contact' }

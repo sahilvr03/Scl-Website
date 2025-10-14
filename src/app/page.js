@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import ProjectsPage from "./components/projects";
 import TechnologyPage from "./components/technology";
 import Events from "./components/events";
-
+import Link from "next/link";
 import Mission from "./components/mission";
 import Image from 'next/image';
 
@@ -18,7 +18,7 @@ const slides = [
     highlight: "LAB",
    
     desc: "Pioneering AI Research for Smart Urban Solutions at the National Center of Artificial Intelligence.",
-    button: "Learn More →",
+    button: "About Us →",
     image: "/images/image.png",
     badgeColor: "bg-white text-blue-900",
     textColor: "text-yellow-300",
@@ -32,11 +32,9 @@ const slides = [
     highlight: "RESEARCH",
     
     desc: "Developing cutting-edge AI solutions for sustainable urban envirionments.",
-    button: "View Projects →",
     image: "/images/weedbot.jpg",
     badgeColor: "bg-green-400 text-gray-900",
     textColor: "text-green-300",
-    buttonColor: "bg-yellow-400 text-gray-900 hover:bg-yellow-300",
     gradient: "from-purple-900/80 via-purple-900/30 to-black/80"
   },
   {
@@ -46,11 +44,9 @@ const slides = [
     highlight: "SOLUTIONS",
 
     desc: "Creating intelligent systems that imporve the quality of urban living",
-    button: "Read Case Study →",
     image: "/images/meeting.jpg",
     badgeColor: "bg-blue-300 text-gray-900",
     textColor: "text-yellow-300",
-    buttonColor: "bg-green-400 text-white hover:bg-pink-500",
     gradient: "from-green-900/80 via-green-900/30 to-black/80"
   }
 ];
@@ -160,13 +156,16 @@ export default function Home() {
                     {current.after}
                   </h2>
                   <p className="text-lg text-white/90 mb-8 max-w-lg mx-auto">{current.desc}</p>
-                  <motion.button
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className={`${current.buttonColor} px-6 py-3 rounded-md font-semibold transition`}
-                  >
-                    {current.button}
-                  </motion.button>
+<Link href="/Admin/AboutPage">
+  <motion.button
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+    className={`${current.buttonColor} px-6 py-3 rounded-md font-semibold transition`}
+  >
+    {current.button}
+  </motion.button>
+</Link>
+
                 </motion.div>
               </div>
             </motion.div>

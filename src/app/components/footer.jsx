@@ -73,15 +73,18 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <FaMapMarkerAlt className="text-blue-400 mt-1 mr-3 flex-shrink-0" />
-                <span className="text-gray-300">AI Innovation Campus, Berlin, Germany</span>
+                <span className="text-gray-300">1st Floor Smart City Lab - Department of Computer and Information Systems
+Engineering,NED University of Engineering and Technology, Main University Road,
+Block 1, Gulistan-e-Johar, Karachi(75270)-Sindh
+</span>
               </li>
               <li className="flex items-center">
                 <FaPhone className="text-blue-400 mr-3" />
-                <span className="text-gray-300">+49 30 1234 5678</span>
+                <span className="text-gray-300">+92-3353046110, +92-3332817105</span>
               </li>
               <li className="flex items-center">
                 <FaEnvelope className="text-blue-400 mr-3" />
-                <a href="mailto:info@ncai-research.org" className="text-gray-300 hover:text-blue-400 transition-colors">info@ncai-research.org</a>
+                <a href="mailto:info@ncai-research.org" className="text-gray-300 hover:text-blue-400 transition-colors">smartcitylab.neduet.edu.pk</a>
               </li>
               <li className="flex items-center">
                 <FaRegClock className="text-blue-400 mr-3" />

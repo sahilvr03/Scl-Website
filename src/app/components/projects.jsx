@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { FaArrowRight, FaCalendarAlt } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-
+import Link from 'next/link';
 export default function ProjectsPage() {
   const projects = [
     {
@@ -92,13 +92,16 @@ export default function ProjectsPage() {
                 Explore our portfolio of transformative projects across industries
               </motion.p>
             </div>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="flex items-center px-6 py-3 bg-blue-500 text-white rounded-full hover:bg-blue-700 transition duration-300 shadow-lg hover:shadow-xl"
-            >
-              View All Projects <FaArrowRight className="ml-2" />
-            </motion.button>
+            <Link href="./Admin/projectPage">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="flex items-center px-6 py-3 bg-blue-500 text-white rounded-full hover:bg-blue-700 transition duration-300 shadow-lg hover:shadow-xl"
+              >
+                View All Projects <FaArrowRight className="ml-2" />
+              </motion.button>
+            </Link>
+
           </div>
 
           <motion.div

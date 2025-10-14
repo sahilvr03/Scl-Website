@@ -375,10 +375,12 @@ const AboutPage = () => {
               Academic Partners
             </h4>
             <ul className="space-y-3 text-gray-600">
-              <li>Massachusetts Institute of Technology (MIT)</li>
-              <li>Stanford University</li>
-              <li>LUMS School of Science & Engineering</li>
-              <li>NUST School of Electrical Engineering & Computer Science</li>
+              <li>National University of Sciences & Technology (NUST)</li>
+              <li>Abu Dhabi University</li>
+              <li>Agriculture Research Sindh </li>
+              <li>The Aga Khan University Hospital</li>
+              <li>COMSATS University Islamabad</li>
+              <li>DAAD – German Academic Exchange Service</li>
             </ul>
           </div>
 
@@ -387,24 +389,16 @@ const AboutPage = () => {
               Industry Collaborators
             </h4>
             <ul className="space-y-3 text-gray-600">
-              <li>IBM Research</li>
-              <li>Microsoft Research</li>
-              <li>Siemens Smart Infrastructure</li>
-              <li>Systems Limited</li>
+              <li>Crop2X</li>
+              <li>SUPARCO (Space & Upper Atmosphere Research Commission)</li>
+              <li>Pakistan Oxygen Limited</li>
+              <li>Ismail Industries Limited</li>
+              <li>TPL Trakker Limited</li>
+              <li>Artistic Milliners</li>
             </ul>
           </div>
 
-          <div>
-            <h4 className="text-xl font-semibold text-gray-800 mb-4 border-b pb-2">
-              Government Partners
-            </h4>
-            <ul className="space-y-3 text-gray-600">
-              <li>Ministry of Science & Technology</li>
-              <li>Karachi Metropolitan Corporation</li>
-              <li>Punjab Information Technology Board</li>
-              <li>Higher Education Commission of Pakistan</li>
-            </ul>
-          </div>
+          
         </div>
       </motion.div>
     </div>

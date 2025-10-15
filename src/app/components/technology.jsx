@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { FaRobot, FaDatabase, FaNetworkWired, FaMobileAlt, FaArrowRight } from "react-icons/fa";
-
+import Link from "next/link";
 const technologies = [
   {
     title: "Artificial Intelligence",
@@ -64,11 +64,16 @@ export default function TechnologyPage() {
             </motion.p>
           </div>
           <motion.button 
+
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="flex items-center px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300 shadow-lg hover:shadow-xl"
+          
           >
-            Explore All Tech <FaArrowRight className="ml-2" />
+            <Link href="./Admin/ServicesPage"  className="flex items-center px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300 shadow-lg hover:shadow-xl">
+
+          Explore All Tech <FaArrowRight className="ml-2" />
+          </Link>
+            
           </motion.button>
         </div>
 
@@ -107,15 +112,19 @@ export default function TechnologyPage() {
                   {tech.icon}
                 </div>
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition duration-300 mb-3">
-                  {tech.title}
-                </h3>
-                <p className="text-gray-600 mb-5">{tech.description}</p>
-                <button className="w-full py-2 text-sm font-medium text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-600 hover:text-white transition duration-300">
-                  Learn More
-                </button>
-              </div>
+              <div className="p-6 flex flex-col h-full">
+  <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition duration-300 mb-3">
+    {tech.title}
+  </h3>
+  <p className="text-gray-600 mb-5 flex-grow">{tech.description}</p>
+
+  <Link
+    href="./Admin/ServicesPage"
+    className="mt-auto w-full p-2 text-sm font-medium text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-600 hover:text-white transition duration-300 text-center"
+  >
+    Learn More
+  </Link>
+</div>
             </motion.div>
           ))}
         </motion.div>

@@ -147,9 +147,9 @@ export default function ProjectsPage() {
                         <div className="flex items-center text-gray-500 text-sm">
                           <FaCalendarAlt className="mr-2" /> {project.date}
                         </div>
-                        <button className="text-sm font-medium px-4 py-2 rounded-lg border border-gray-200 hover:bg-gray-50 transition">
+                        {/* <button className="text-sm font-medium px-4 py-2 rounded-lg border border-gray-200 hover:bg-gray-50 transition">
                           Details →
-                        </button>
+                        </button> */}
                       </div>
                     </div>
                   </>
@@ -163,9 +163,10 @@ export default function ProjectsPage() {
                       <div className="flex items-center text-white/80 text-sm">
                         <FaCalendarAlt className="mr-2" /> {project.date}
                       </div>
-                      <button className="text-sm bg-white/20 hover:bg-white/30 px-4 py-2 rounded-lg transition-colors">
+                      <Link href="./Admin/projectPage"
+                       className="text-sm bg-white/20 hover:bg-white/30 px-4 py-2 rounded-lg transition-colors">
                         Explore
-                      </button>
+                      </Link>
                     </div>
                   </div>
                 )}

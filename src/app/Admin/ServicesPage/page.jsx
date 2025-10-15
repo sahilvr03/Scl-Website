@@ -167,12 +167,21 @@ const ServicesPage = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.5 }}
             >
-              <a
-                href="#services"
-                className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-all duration-300"
-              >
-                Explore Our Services
-              </a>
+             <button
+  onClick={() => {
+    const section = document.getElementById("services");
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }
+  }}
+  className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-all duration-300"
+>
+  Explore Our Services
+</button>
+
             </motion.div>
           </motion.div>
         </div>
@@ -231,13 +240,13 @@ const ServicesPage = () => {
                     </div>
                   ))}
                 </div>
-                <motion.button
+                {/* <motion.button
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.98 }}
                   className={`mt-6 w-full py-3 bg-gradient-to-br ${service.color} text-white rounded-lg font-medium`}
                 >
                   View Solutions
-                </motion.button>
+                </motion.button> */}
               </div>
             </motion.div>
           ))}
@@ -291,21 +300,21 @@ const ServicesPage = () => {
               <FaEnvelope className="text-2xl text-gray-700" />
               <div>
                 <h4 className="text-lg font-semibold text-gray-900">Email Us</h4>
-                <p className="text-gray-600">ncaismartcitylab@gmail.com</p>
+                <p className="text-gray-600">martcitylab.neduet.edu.pk</p>
               </div>
             </div>
             <div className="flex items-center space-x-4">
               <FaPhone className="text-2xl text-gray-700" />
               <div>
                 <h4 className="text-lg font-semibold text-gray-900">Call Us</h4>
-                <p className="text-gray-600">Phone: +92 335 3046110</p>
+                <p className="text-gray-600">Phone: +92-3353046110, +92-3332817105</p>
               </div>
             </div>
             <div className="flex items-center space-x-4">
               <FaMapMarkerAlt className="text-2xl text-gray-700" />
               <div>
                 <h4 className="text-lg font-semibold text-gray-900">Visit Us</h4>
-                <p className="text-gray-600">1st Floor, Department of Computer and Information Systems Engineering.</p>
+                <p className="text-gray-600">1st Floor Smart City Lab - Department of Computer and Information Systems Engineering, NED University of Engineering and Technology, Main University Road, Block 1, Gulistan-e-Johar, Karachi(75270)-Sindh</p>
               </div>
             </div>
             <div className="flex items-center space-x-4">
@@ -314,7 +323,7 @@ const ServicesPage = () => {
               <div>
                 <h4 className="text-lg font-semibold text-gray-900">Follow Us</h4>
                 <p className="text-gray-600">Stay updated with our latest innovations:</p>
-                <p className="text-gray-600">[Facebook] [LinkedIn]</p>
+                <p className="text-gray-600">NCAI - NEDUET, Smart City Lab</p>
               </div>
             </div>
           </div>

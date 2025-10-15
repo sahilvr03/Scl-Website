@@ -31,8 +31,7 @@ export default function Navbar() {
       <div className="bg-white/80 backdrop-blur-sm border-b border-gray-200 shadow-sm">
         <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-2 text-sm text-gray-700">
           <div className="flex gap-4">
-            <Link href="/press">Press</Link>
-            <Link href="/contact">Contact</Link>
+            
             <a
   href="https://scl-internship-portal.vercel.app/"
   target="_blank"

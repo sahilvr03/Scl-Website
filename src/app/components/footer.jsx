@@ -47,11 +47,11 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-6 text-white border-b border-blue-600 pb-2">Quick Links</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">Research Areas</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">Publications</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">Our Team</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">News & Events</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">Careers</a></li>
+              <li><a href="./Admin/ServicesPage" className="text-gray-300 hover:text-blue-400 transition-colors">Research Areas</a></li>
+              <li><a href="./Admin/PublicationPage" className="text-gray-300 hover:text-blue-400 transition-colors">Publications</a></li>
+              {/* <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">Our Team</a></li> */}
+              <li><a href="./Admin/NewsPage" className="text-gray-300 hover:text-blue-400 transition-colors">News & Events</a></li>
+              {/* <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">Careers</a></li> */}
             </ul>
           </div>
 
@@ -59,11 +59,11 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-6 text-white border-b border-blue-600 pb-2">Research Areas</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">Machine Learning</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">Computer Vision</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">Natural Language Processing</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">Robotics & Automation</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">AI Ethics</a></li>
+              <li><a href="./Admin/ServicesPage" className="text-gray-300 hover:text-blue-400 transition-colors">Machine Learning</a></li>
+              <li><a href="./Admin/ServicesPage" className="text-gray-300 hover:text-blue-400 transition-colors">Computer Vision</a></li>
+              <li><a href="./Admin/ServicesPage" className="text-gray-300 hover:text-blue-400 transition-colors">Natural Language Processing</a></li>
+              <li><a href="./Admin/ServicesPage" className="text-gray-300 hover:text-blue-400 transition-colors">Robotics & Automation</a></li>
+              <li><a href="./Admin/ServicesPage" className="text-gray-300 hover:text-blue-400 transition-colors">AI Ethics</a></li>
             </ul>
           </div>
 

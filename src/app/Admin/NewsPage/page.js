@@ -16,7 +16,7 @@ const NewsEventsPage = () => {
         "Discussions for future collaborations"
       ],
       category: "Launch",
-      image: "https://images.unsplash.com/photo-1551836022-4c4c79ecde51?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
+      image: "/AI.jpeg",
     },
     {
       title: "NCAI–NEDUET Smart City Lab Joins Pakistan’s Historic Space Mission",
@@ -42,7 +42,7 @@ const NewsEventsPage = () => {
         "Supporting sustainable agriculture"
       ],
       category: "Collaboration",
-      image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
+      image: "/TPL.jpeg",
     },
     {
       title: "Revolutionizing Farming with AI and Remote Sensing",
@@ -55,7 +55,7 @@ const NewsEventsPage = () => {
         "Weather updates for better planning"
       ],
       category: "AgriTech",
-      image: "https://images.unsplash.com/photo-1509099836639-18ba1795216d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
+      image: "/Agritech.jpg",
     }
   ];
 

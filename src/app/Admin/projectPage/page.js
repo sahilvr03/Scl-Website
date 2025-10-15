@@ -101,15 +101,7 @@ const ProjectsPage = () => {
           featured: true,
           href: '/Admin/projectPage/CropMonitoring',
         },
-        {
-          id: 'agr-2',
-          name: 'Water Resource Management',
-          completed: false,
-          details: 'Advanced systems for efficient water distribution and conservation.',
-          image: '/images/water-management.jpg',
-          year: 2024,
-          href: '#',
-        },
+       
         {
           id: 'agr-3',
           name: 'Weed Removal Robot',
@@ -127,7 +119,7 @@ const ProjectsPage = () => {
           image: '/images/rice.jpg',
           year: 2023,
           featured: true,
-          href: '#',
+          href: '/Admin/projectPage/RiceQuality',
         },
       ],
     },

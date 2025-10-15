@@ -75,16 +75,32 @@ const AboutPage = () => {
               Pioneering AI research for the urban technologies of tomorrow
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
+                           <button
+  onClick={() => {
+    const section = document.getElementById("ResearchSection");
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }
+  }}
+  className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-all duration-300"
+>
+  Explore Our Research
+</button>
               <motion.button
                 whileHover={{ y: -3 }}
                 whileTap={{ scale: 0.98 }}
-                className="px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl text-lg font-medium"
-              >
-                Explore Our Research
-              </motion.button>
-              <motion.button
-                whileHover={{ y: -3 }}
-                whileTap={{ scale: 0.98 }}
+                 onClick={() => {
+    const section = document.getElementById("ResearchSection");
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }
+  }}
                 className="px-8 py-4 bg-transparent border-2 border-white text-white rounded-lg hover:bg-white/10 transition-all duration-300 text-lg font-medium"
               >
                 Meet Our Team
@@ -106,7 +122,7 @@ const AboutPage = () => {
       </section>
 
       {/* Lab Overview Section */}
-      <section className="py-28 px-6 max-w-7xl mx-auto">
+      <section className="py-28 px-6 max-w-7xl mx-auto" id="ResearchSection">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -40 }}

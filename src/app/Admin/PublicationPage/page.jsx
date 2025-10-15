@@ -253,14 +253,22 @@ const PublicationsPage = () => {
           } 
         }}
       >
-        <button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-500 text-white rounded-full font-medium text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:brightness-110 flex items-center mx-auto group">
+        {/* <button  onClick={() => {
+  const section = document.getElementById("publication");
+  if (section) {
+    const yOffset = -100; // adjust for navbar height
+    const y = section.getBoundingClientRect().top + window.scrollY + yOffset;
+    window.scrollTo({ top: y, behavior: "smooth" });
+  }
+}}
+className="px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-500 text-white rounded-full font-medium text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:brightness-110 flex items-center mx-auto group">
           Explore Publications
           <motion.span 
             className="ml-2 inline-block group-hover:translate-x-2 transition-transform duration-300"
           >
             →
           </motion.span>
-        </button>
+        </button> */}
       </motion.div>
     </motion.div>
 
@@ -325,7 +333,7 @@ const PublicationsPage = () => {
   </motion.div>
 </section>
       {/* Publications Section */}
-      <section className="py-20 px-6 max-w-7xl mx-auto">
+      <section className="py-20 px-6 max-w-7xl mx-auto" id="publication">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}

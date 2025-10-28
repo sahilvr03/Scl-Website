@@ -39,12 +39,12 @@ const SatelliteMonitoring = () => {
             >
               Explore the Platform
             </Link>
-            <Link
+            {/* <Link
               href="#"
               className="px-6 py-2 bg-gray-100 text-gray-900 rounded-full text-sm font-medium hover:bg-gray-200 transition-colors"
             >
               Watch How It Works
-            </Link>
+            </Link> */}
           </div>
         </motion.div>
       </section>

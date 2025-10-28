@@ -30,12 +30,12 @@ const VisionDrive = () => {
             Advancing Safety and Intelligence in Autonomous Vehicles
           </p>
           <div className="flex justify-center gap-4">
-            <Link href="#" className="bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-2 rounded-full text-sm font-medium transition">
+            {/* <Link href="#" className="bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-2 rounded-full text-sm font-medium transition">
               Learn More
             </Link>
             <Link href="#" className="bg-white/90 hover:bg-white text-gray-900 px-6 py-2 rounded-full text-sm font-medium transition">
               Watch Demo
-            </Link>
+            </Link> */}
           </div>
         </motion.div>
       </section>

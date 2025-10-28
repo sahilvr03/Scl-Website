@@ -16,8 +16,10 @@ const navLinks = [
   { name: 'Publications', href: '../../Admin/PublicationPage' },
   // { name: 'Team', href: '/team' },
   { name: 'News & Events', href: '../../Admin/NewsPage' },
-  { name: 'Gallery', href: '../../Admin/GalleryPage' },
-  { name: 'Contact Us', href: '/contact' }
+    // { name: 'Internships', href: 'https://scl-internship-portal.vercel.app/' },
+
+  // { name: 'Gallery', href: '../../Admin/GalleryPage' },
+  // { name: 'Contact Us', href: '/contact' }
 ];
 
 export default function Navbar() {

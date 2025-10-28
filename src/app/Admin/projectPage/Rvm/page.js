@@ -34,7 +34,7 @@ const ReverseVendingMachine = () => {
       Smart Recycling to Combat Plastic Pollution & Promote Environmental Responsibility
     </h2>
     <div className="flex gap-4">
-      <Link
+      {/* <Link
         href="#"
         className="px-6 py-2 bg-cyan-600 text-white rounded-full text-sm font-semibold hover:bg-cyan-700 transition-colors"
       >
@@ -45,7 +45,7 @@ const ReverseVendingMachine = () => {
         className="px-6 py-2 bg-white/90 text-gray-900 rounded-full text-sm font-semibold hover:bg-white transition-colors"
       >
         Watch Demo
-      </Link>
+      </Link> */}
     </div>
   </motion.div>
 </section>
